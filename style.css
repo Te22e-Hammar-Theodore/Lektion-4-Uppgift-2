@@ -1,18 +1,35 @@
-.grid{
-    display: grid;
-    grid-template-columns: 15% auto;
+.grid {
+  display: grid;
+  grid-template-columns: 15% auto;
+  gap: 0.2rem;
 }
 
-.logo{
-    display: flex;
-    justify-content: center;
+.logo {
+  display: flex;
+  justify-content: center;
 }
 
 .logo img {
-    height: 6rem;
+  height: 6rem;
 }
 
-aside{
-    grid-row: 2/5;
-    background-image: url(Images/dragon_side.png);
+aside {
+  grid-row: 2/5;
+  background-image: url(Images/dragon_side.png);
+}
+
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+header,
+main,
+nav,
+footer {
+  background-image: url(Images/background.jpg);
+}
+
+h1 {
+  color: white;
 }
